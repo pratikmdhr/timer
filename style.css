@@ -1,0 +1,83 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans',
+    'Droid Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.timer {
+  /* height: 100vh; */
+  position: relative;
+  margin: 100px auto;
+  height: 400px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  /* border: 2px red solid; */
+}
+
+.dial {
+  height: 400px;
+  width: 400px;
+}
+
+.timer input {
+  display: block;
+  border: none;
+  width: 240px;
+  font-size: 90px;
+  text-align: center;
+}
+
+.timer button {
+  border: none;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.timer button:focus {
+  outline: none;
+}
+
+.timer input:focus {
+  outline: none;
+}
+
+.controls {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.controls .btn {
+  width: 60px;
+  height: 60px;
+  margin: 5px;
+  /* border: 2px red solid; */
+  border-radius: 50%;
+  transition: all 0.25s ease-in-out;
+}
+
+.controls .btn.start:hover {
+  background-color: rgb(165, 214, 165);
+}
+
+.controls .btn.start.paused:hover {
+  background-color: rgb(235, 176, 110);
+}
+.controls .btn.reset:hover {
+  background-color: rgb(235, 152, 152);
+}
